@@ -1,0 +1,15 @@
+1- To assemble a program using nasm we do that:
+    nasm -f elf file.asm
+
+    then if the program don't start with main function we gonna use this:
+        ld file.o -o file
+    else we gonna use gcc
+        gcc file.o -o file
+
+2- "[var]" means read the value stored at var but "var" means the address of var itself.
+
+3- in NASM, "section .bss" is to allocate writable memory, like in this code I'm reserving 100 byte of memory.
+section .bss
+    buffer resb 100 ; buffer is the name of label, resb => reserve byte and 100 mean how much byte to 
+
+4- test instruction do AND operation between without saving the result and it changes the flags registers.
