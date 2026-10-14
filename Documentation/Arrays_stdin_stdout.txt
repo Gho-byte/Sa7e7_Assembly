@@ -13,3 +13,8 @@ section .bss
     buffer resb 100 ; buffer is the name of label, resb => reserve byte and 100 mean how much byte to 
 
 4- test instruction do AND operation between without saving the result and it changes the flags registers.
+
+5- Sections:
+    section .data    ; Initialized variables
+    section .bss     ; Uninitialized variables
+    section .text    ; Program instructions
